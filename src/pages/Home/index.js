@@ -21,7 +21,7 @@ function Home(props) {
                     "repositoriesName",
                     JSON.stringify(repositoriesName)
                 );
-                history.push("/repositories");
+                history.push("/repository-listing/repositories");
             })
             .catch((err) => {
                 setError(true);

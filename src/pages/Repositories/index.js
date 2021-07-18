@@ -13,7 +13,7 @@ function Repositories() {
             setRepositories(repositoriesName);
             localStorage.clear();
         } else {
-            history.push("/");
+            history.push("/repository-listing");
         }
         // eslint-disable-next-line
     }, []);
@@ -30,7 +30,7 @@ function Repositories() {
                     );
                 })}
             </S.List>
-            <S.LinkHome to="/">Back</S.LinkHome>
+            <S.LinkHome to="/repository-listing">Back</S.LinkHome>
         </S.Container>
     );
 }
