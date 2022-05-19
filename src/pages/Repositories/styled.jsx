@@ -2,16 +2,15 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 991px;
   margin: 0 auto;
+  padding: 0 1rem;
 `;
 
 export const Title = styled.h1`
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2rem;
   color: #cccccc;
   padding: 2rem;
@@ -20,17 +19,20 @@ export const Title = styled.h1`
 export const List = styled.ul`
   list-style: none;
   padding: 0;
-  font-family: sans-serif;
 `;
 
 export const ListItem = styled.li`
   margin: 0.5rem 0;
   background: #72cbff1d;
   color: #dadada;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
   border-radius: 0.25rem;
-  font-weight: 600;
-  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+`;
+
+export const Repository = styled.a`
+  text-decoration: none;
+  color: inherit;
 `;
 
 export const LinkHome = styled(Link)`
@@ -43,5 +45,5 @@ export const LinkHome = styled(Link)`
   padding: 0.5rem 0;
   text-decoration: none;
   border-radius: 0.25rem;
-  font-weight: 600;
+  font-weight: 500;
 `;

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Repositories = () => {
   const navigate = useNavigate();
   const [repositories, setRepositories] = useState([]);
+  const [user, setUser] = useState('');
 
   useEffect(() => {
     let repositoriesName = localStorage.getItem('repositoriesName');
@@ -13,17 +14,24 @@ const Repositories = () => {
     repositoriesName = JSON.parse(repositoriesName);
     setRepositories(repositoriesName);
 
-    const user = localStorage.getItem('user');
+    setUser(localStorage.getItem('user'));
     document.title = `${user}'s repos`;
-  }, [navigate]);
+  }, [navigate, user]);
 
   return (
     <S.Container>
       <S.Title>Repositories</S.Title>
       <S.List>
-        {repositories.map((repo) => {
-          return <S.ListItem key={repo}>Repository: {repo}</S.ListItem>;
-        })}
+        {repositories.map((repo) => (
+          <S.ListItem key={repo}>
+            <S.Repository
+              href={`https://github.com/${user}/${repo}`}
+              target="_blank"
+            >
+              {repo}
+            </S.Repository>
+          </S.ListItem>
+        ))}
       </S.List>
       <S.LinkHome to="/repository-listing">Back</S.LinkHome>
     </S.Container>

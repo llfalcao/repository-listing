@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
-const segoeUI = "'Segoe UI', sans-serif";
-
 export const HomeContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+export const Title = styled.h1`
+  font-size: 1.7rem;
+  font-weight: semibold;
+  margin-bottom: 2rem;
 `;
 
 export const Content = styled.form`
@@ -24,7 +28,6 @@ export const Input = styled.input`
   height: 3rem;
   padding: 0 0.5rem;
   border-radius: 0.25rem 0 0 0.25rem;
-  font-family: ${segoeUI};
 
   &:focus,
   &:active {
@@ -42,7 +45,6 @@ export const Button = styled.button`
   border-left: transparent;
   border-radius: 0 0.25rem 0.25rem 0;
   cursor: pointer;
-  font-family: ${segoeUI};
   font-size: 1rem;
 
   &:focus,

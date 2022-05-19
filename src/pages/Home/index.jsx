@@ -32,6 +32,8 @@ const Home = () => {
 
   return (
     <S.HomeContainer>
+      <S.Title>GitHub Repository Listing</S.Title>
+
       <S.Content onSubmit={handleSearch}>
         <S.Input
           className="userInput"
