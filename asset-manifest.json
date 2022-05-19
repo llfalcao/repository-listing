@@ -1,20 +1,13 @@
 {
   "files": {
-    "main.css": "/repository-listing/static/css/main.3fa35637.chunk.css",
-    "main.js": "/repository-listing/static/js/main.458fba39.chunk.js",
-    "main.js.map": "/repository-listing/static/js/main.458fba39.chunk.js.map",
-    "runtime-main.js": "/repository-listing/static/js/runtime-main.8f97dc6a.js",
-    "runtime-main.js.map": "/repository-listing/static/js/runtime-main.8f97dc6a.js.map",
-    "static/js/2.e81b8b58.chunk.js": "/repository-listing/static/js/2.e81b8b58.chunk.js",
-    "static/js/2.e81b8b58.chunk.js.map": "/repository-listing/static/js/2.e81b8b58.chunk.js.map",
+    "main.css": "/repository-listing/static/css/main.da3bd7fc.css",
+    "main.js": "/repository-listing/static/js/main.d4239ea8.js",
     "index.html": "/repository-listing/index.html",
-    "static/css/main.3fa35637.chunk.css.map": "/repository-listing/static/css/main.3fa35637.chunk.css.map",
-    "static/js/2.e81b8b58.chunk.js.LICENSE.txt": "/repository-listing/static/js/2.e81b8b58.chunk.js.LICENSE.txt"
+    "main.da3bd7fc.css.map": "/repository-listing/static/css/main.da3bd7fc.css.map",
+    "main.d4239ea8.js.map": "/repository-listing/static/js/main.d4239ea8.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f97dc6a.js",
-    "static/js/2.e81b8b58.chunk.js",
-    "static/css/main.3fa35637.chunk.css",
-    "static/js/main.458fba39.chunk.js"
+    "static/css/main.da3bd7fc.css",
+    "static/js/main.d4239ea8.js"
   ]
 }
